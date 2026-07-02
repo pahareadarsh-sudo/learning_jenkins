@@ -7,9 +7,7 @@ const app = express();
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
-
-
+app.use('/add', require('./routes/Addittionroute'));
 
 app.listen(3000, () => {
   
